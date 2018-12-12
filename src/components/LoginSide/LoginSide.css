@@ -1,0 +1,24 @@
+.LoginSide{
+    background-color:limegreen;
+    height: 100%;
+    width:100%;
+    top:0;
+}
+
+.TitleSpace{
+    padding: 50px;
+}
+
+.LowerHalf{
+    bottom: 0;
+    height: 55%;
+    width: 100%;
+    position: absolute;
+}
+.TitleText{
+    margin: 0;
+
+}
+.LoginFormDiv{
+
+}
