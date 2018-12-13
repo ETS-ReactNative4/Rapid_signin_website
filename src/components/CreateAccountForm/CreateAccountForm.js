@@ -7,7 +7,7 @@ export class CreateAccountForm extends React.Component{
             <TextField
             id="SSID Text Field"
             label=""
-            placeholder=""
+            placeholder="ssid"
             className="SSID Text Field"
             margin="normal"
             autoFocus
