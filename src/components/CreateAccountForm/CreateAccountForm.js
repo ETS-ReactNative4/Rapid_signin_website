@@ -5,10 +5,34 @@ export class CreateAccountForm extends React.Component{
     render(){
         return (
             <TextField
-            id="SSID Text Field"
+            id="SSID"
             label=""
-            placeholder="ssid"
-            className="SSID Text Field"
+            placeholder="SSID"
+            className="TextField"
+            margin="normal"
+            autoFocus
+            />
+            <TextField
+            id="FirstName"
+            label=""
+            placeholder="First Name"
+            className="TextField"
+            margin="normal"
+            autoFocus
+            />
+            <TextField
+            id="LastName"
+            label=""
+            placeholder="LastName"
+            className="TextField"
+            margin="normal"
+            autoFocus
+            />
+            <TextField
+            id="Email"
+            label=""
+            placeholder="E-mail"
+            className="TextField"
             margin="normal"
             autoFocus
             />
