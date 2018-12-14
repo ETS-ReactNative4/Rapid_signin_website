@@ -13,6 +13,7 @@ export class CreateAccountForm extends React.Component{
                margin="normal"
                autoFocus
                />
+               <br />
                <TextField
                id="FirstName"
                label=""
@@ -29,6 +30,7 @@ export class CreateAccountForm extends React.Component{
                margin="normal"
                autoFocus
                />
+               <br />
                <TextField
                id="Email"
                label=""
