@@ -6,10 +6,10 @@ export class CreateAccountForm extends React.Component{
       super(props);
       this.state = {ssid: "", first: "", last: "", email: ""};
 
-      this.onSSIDChange = this.handleChange.bind(this);
-      this.onFirstChange = this.handleChange.bind(this);
-      this.onLastChange = this.handleChange.bind(this);
-      this.onEmailChange = this.handleChange.bind(this);
+      this.onSSIDChange = this.onSSIDChange.bind(this);
+      this.onFirstChange = this.onFirstChange.bind(this);
+      this.onLastChange = this.onLastChange.bind(this);
+      this.onEmailChange = this.onEmailChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
 
