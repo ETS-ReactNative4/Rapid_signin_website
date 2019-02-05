@@ -42,7 +42,7 @@ export class CreateAccountForm extends React.Component{
                placeholder="SSID"
                className="TextField"
                margin="normal"
-               onChange={this.handleChange()}
+               onChange={this.handleChange}
                autoFocus
                />
                <br />
@@ -53,7 +53,7 @@ export class CreateAccountForm extends React.Component{
                placeholder="First Name"
                className="TextField"
                margin="normal"
-               onChange={this.handleChange()}
+               onChange={this.handleChange}
                autoFocus
                />
                <TextField
@@ -63,7 +63,7 @@ export class CreateAccountForm extends React.Component{
                placeholder="LastName"
                className="TextField"
                margin="normal"
-               onChange={this.handleChange()}
+               onChange={this.handleChange}
                autoFocus
                />
                <br />
@@ -74,7 +74,7 @@ export class CreateAccountForm extends React.Component{
                placeholder="E-mail"
                className="TextField"
                margin="normal"
-               onChange={this.handleChange()}
+               onChange={this.handleChange}
                autoFocus
                />
               <input type="submit" value="Submit"/>
