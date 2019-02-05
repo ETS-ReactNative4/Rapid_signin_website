@@ -22,7 +22,7 @@ export class CreateAccountForm extends React.Component{
     }
 
     handleSubmit(event){
-      const state = this.state;
+      const state = event.target;
       window.location = window.location +
                         "new_student?ssid=" + state.ssid +
                         "&first" + state.first +
