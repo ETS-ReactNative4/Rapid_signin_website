@@ -35,10 +35,10 @@ export class CreateAccountForm extends React.Component{
     render(){
       return(
         <form className="CreateAccountForm" onSubmit={this.handleSubmit}>
-          <input id="SSID" type="text" value={this.state.ssid} onChange={this.handleChange()}/>
-          <input id="FistName" type="text" value={this.state.first} onChange={this.handleChange()}/>
-          <input id="SecondName" type="text" value={this.state.last} onChange={this.handleChange()}/>
-          <input id="Email" type="text" value={this.state.email} onChange={this.handleChange()}/>
+          <input id="SSID" type="text" value={this.state.ssid} onChange={this.handleChange}/>
+          <input id="FistName" type="text" value={this.state.first} onChange={this.handleChange}/>
+          <input id="SecondName" type="text" value={this.state.last} onChange={this.handleChange}/>
+          <input id="Email" type="text" value={this.state.email} onChange={this.handleChange}/>
           <inpit type="submit" value="Submit"/>
         </form>
       )
