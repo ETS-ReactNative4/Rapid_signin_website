@@ -1,5 +1,5 @@
 import React from 'react'
-import TextField from '@material-ui/core/TextField';
+//import TextField from '@material-ui/core/TextField';
 
 export class CreateAccountForm extends React.Component{
     constructor(props){
@@ -41,16 +41,23 @@ export class CreateAccountForm extends React.Component{
 
 
     render(){
-      /*return(
+      return(
         <div className="CreateAccountForm">
-          <input id="SSID" type="text" value={this.state.ssid} onChange={this.onSSIDChange}/>
+          <p>SSID:</p>
+          <input id="SSID" type="text" value={this.state.ssid} onChange={this.onSSIDChange} autoFocus/>
+          <br/>
+          <p>First Name:</p>
           <input id="FistName" type="text" value={this.state.first} onChange={this.onFirstChange}/>
+          <br/>
+          <p>Last Name:</p>
           <input id="SecondName" type="text" value={this.state.last} onChange={this.onLastChange}/>
+          <br/>
+          <p>Bellevue College Email:</p>
           <input id="Email" type="text" value={this.state.email} onChange={this.onEmailChange}/>
           <input type="submit" value="Submit" onClick={this.handleSubmit} />
         </div>
-      )*/
-        return (
+      )
+        /*return (
             <div className="CreateAccountForm" >
                <TextField
                id="SSID"
@@ -96,6 +103,6 @@ export class CreateAccountForm extends React.Component{
                />
               <input type="submit" value="Submit" onSubmit={this.handleSubmit}/>
             </div>
-        )
+        )*/
     }
 }
