@@ -65,15 +65,15 @@ app.get('/new_student', (req, res) => {
     first_name == undefined ||
     last_name == undefined ||
     email == undefined){
-    //ERROR
+    res.send("FAILED TO INSERT ROW INTO DATABASE");
   }
   else{
     const db = new database('signin_info.db');
     const stmt = db.prepare('INSERT INTO student_info(ssid, first_name, last_name, email) VALUES (?,?,?,?)');
     const info = stmt.run(ssid, first_name, last_name, email);
     console.log(info);
+    res.send("INSERTED ROW INTO DATABASE");
   }
-  res.send("INSERTED ROW INTO DATABASE");
 });
 
 app.listen(process.env.PORT || http_port, () => console.log("Listening on port 3000"));
