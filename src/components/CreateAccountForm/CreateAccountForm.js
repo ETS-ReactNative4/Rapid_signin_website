@@ -33,9 +33,9 @@ export class CreateAccountForm extends React.Component{
       const state = this.state;
       window.location = window.location +
                         "new_student?ssid=" + state.ssid +
-                        "&first" + state.first +
-                        "&last" + state.last +
-                        "&email" + state.email;
+                        "&first=" + state.first +
+                        "&last=" + state.last +
+                        "&email=" + state.email;
       event.preventDefault();
     }
 
