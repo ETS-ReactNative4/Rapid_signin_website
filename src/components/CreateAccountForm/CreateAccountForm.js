@@ -54,6 +54,7 @@ export class CreateAccountForm extends React.Component{
             <div className="CreateAccountForm" >
                <TextField
                id="SSID"
+               label=""
                value={this.state.ssid}
                placeholder="SSID"
                className="TextField"
@@ -64,28 +65,34 @@ export class CreateAccountForm extends React.Component{
                <br />
                <TextField
                id="FirstName"
+               label=""
                value={this.state.first}
                placeholder="First Name"
                className="TextField"
                margin="normal"
                onChange={this.handleChange}
+               autoFocus
                />
                <TextField
                id="LastName"
+               label=""
                value={this.state.last}
                placeholder="LastName"
                className="TextField"
                margin="normal"
                onChange={this.handleChange}
+               autoFocus
                />
                <br />
                <TextField
                id="Email"
+               label=""
                value={this.state.email}
                placeholder="E-mail"
                className="TextField"
                margin="normal"
                onChange={this.handleChange}
+               autoFocus
                />
               <input type="submit" value="Submit" onSubmit={this.handleSubmit}/>
             </div>
