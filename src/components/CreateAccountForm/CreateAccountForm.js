@@ -51,7 +51,7 @@ export class CreateAccountForm extends React.Component{
         </div>
       )*/
         return (
-            <form className="CreateAccountForm" onSubmit={this.handleSubmit}>
+            <div className="CreateAccountForm" >
                <TextField
                id="SSID"
                label=""
@@ -94,8 +94,8 @@ export class CreateAccountForm extends React.Component{
                onChange={this.handleChange}
                autoFocus
                />
-              <input type="submit" value="Submit"/>
-            </form>
+              <input type="submit" value="Submit" onSubmit={this.handleSubmit}/>
+            </div>
         )
     }
 }
