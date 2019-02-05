@@ -39,7 +39,7 @@ export class CreateAccountForm extends React.Component{
           <input id="FistName" type="text" value={this.state.first} onChange={this.handleChange}/>
           <input id="SecondName" type="text" value={this.state.last} onChange={this.handleChange}/>
           <input id="Email" type="text" value={this.state.email} onChange={this.handleChange}/>
-          <inpit type="submit" value="Submit"/>
+          <input type="submit" value="Submit"/>
         </form>
       )
         /*return (
