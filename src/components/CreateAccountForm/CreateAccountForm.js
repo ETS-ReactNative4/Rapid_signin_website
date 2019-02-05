@@ -41,7 +41,7 @@ export class CreateAccountForm extends React.Component{
 
 
     render(){
-      return(
+      /*return(
         <div className="CreateAccountForm">
           <input id="SSID" type="text" value={this.state.ssid} onChange={this.onSSIDChange}/>
           <input id="FistName" type="text" value={this.state.first} onChange={this.onFirstChange}/>
@@ -49,8 +49,8 @@ export class CreateAccountForm extends React.Component{
           <input id="Email" type="text" value={this.state.email} onChange={this.onEmailChange}/>
           <input type="submit" value="Submit" onClick={this.handleSubmit} />
         </div>
-      )
-        /*return (
+      )*/
+        return (
             <form className="CreateAccountForm" onSubmit={this.handleSubmit}>
                <TextField
                id="SSID"
@@ -96,6 +96,6 @@ export class CreateAccountForm extends React.Component{
                />
               <input type="submit" value="Submit"/>
             </form>
-        )*/
+        )
     }
 }
