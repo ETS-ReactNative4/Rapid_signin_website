@@ -13,7 +13,7 @@ export class CreateAccountForm extends React.Component{
     handleChange(event) {
       const target = event.target;
 
-      this.setSate({
+      this.setState({
         ssid: target.ssid,
         first: target.first,
         last: target.last,
