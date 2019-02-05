@@ -14,10 +14,10 @@ export class CreateAccountForm extends React.Component{
       const target = event.target;
 
       this.setState({
-        ssid: target.ssid,
-        first: target.first,
-        last: target.last,
-        email: target.email
+        ssid: target.value,
+        first: target.value,
+        last: target.value,
+        email: target.value
       });
     }
 
