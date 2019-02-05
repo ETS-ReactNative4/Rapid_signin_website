@@ -24,7 +24,7 @@ export class CreateAccountForm extends React.Component{
     handleSubmit(event){
       const state = this.state;
       window.location = window.location +
-                        "/new_student?ssid=" + state.ssid +
+                        "new_student?ssid=" + state.ssid +
                         "&first" + state.first +
                         "&last" + state.last +
                         "&email" + state.email;
