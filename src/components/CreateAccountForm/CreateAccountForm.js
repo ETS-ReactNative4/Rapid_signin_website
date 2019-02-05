@@ -6,19 +6,27 @@ export class CreateAccountForm extends React.Component{
       super(props);
       this.state = {ssid: "", first: "", last: "", email: ""};
 
-      this.handleChange = this.handleChange.bind(this);
+      this.onSSIDChange = this.handleChange.bind(this);
+      this.onFirstChange = this.handleChange.bind(this);
+      this.onLastChange = this.handleChange.bind(this);
+      this.onEmailChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(event) {
-      const target = event.target;
+    onSSIDChange(event) {
+      this.setState({ssid: event.target.value});
+    }
 
-      this.setState({
-        ssid: target.ssid,
-        first: target.first,
-        last: target.last,
-        email: target.email
-      });
+    onFirstChange(event) {
+      this.setState({first: event.target.value});
+    }
+
+    onLastChange(event) {
+      this.setState({last: event.target.value});
+   }
+
+   onEmailChange(event) {
+      this.setState({email: event.target.value});
     }
 
     handleSubmit(event){
@@ -35,10 +43,10 @@ export class CreateAccountForm extends React.Component{
     render(){
       return(
         <div className="CreateAccountForm">
-          <input id="SSID" type="text" value={this.state.ssid} onChange={this.handleChange}/>
-          <input id="FistName" type="text" value={this.state.first} onChange={this.handleChange}/>
-          <input id="SecondName" type="text" value={this.state.last} onChange={this.handleChange}/>
-          <input id="Email" type="text" value={this.state.email} onChange={this.handleChange}/>
+          <input id="SSID" type="text" value={this.state.ssid} onChange={this.onSSIDChange}/>
+          <input id="FistName" type="text" value={this.state.first} onChange={this.onFirstChange}/>
+          <input id="SecondName" type="text" value={this.state.last} onChange={this.onLastChange}/>
+          <input id="Email" type="text" value={this.state.email} onChange={this.onEmailChange}/>
           <input type="submit" value="Submit" onClick={this.handleSubmit} />
         </div>
       )
