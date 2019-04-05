@@ -4,6 +4,9 @@ const database = require('better-sqlite3');
 const app = express();
 const http_port = 3000;
 
+
+const homePageTimeout = "<script>setTimeout(\"location.href = 'window.location.hostname,2000'\")</script>"
+
 app.use(express.static(path.join(__dirname, 'build')));
 /*
  *  PING
@@ -44,11 +47,11 @@ app.get('/signin', (req, res) => {
         //res.sendFile(path.join(__dirname, 'build', 'index.html'));
       }
       else{
-        res.send("Success")
+        res.send(homePageTimeout + "Success")
       }
     }
     else {
-      res.send("STUDENT DOES NOT EXIST");
+      res.send(homePageTimeout + "STUDENT DOES NOT EXIST");
     }
   }
 
@@ -65,14 +68,14 @@ app.get('/new_student', (req, res) => {
     first_name == undefined ||
     last_name == undefined ||
     email == undefined){
-    res.send("FAILED TO INSERT ROW INTO DATABASE");
+    res.send(homePageTimeout + "FAILED TO INSERT ROW INTO DATABASE");
   }
   else{
     const db = new database('signin_info.db');
     const stmt = db.prepare('INSERT INTO student_info(ssid, first_name, last_name, email) VALUES (?,?,?,?)');
     const info = stmt.run(ssid, first_name, last_name, email);
     console.log(info);
-    res.send("INSERTED ROW INTO DATABASE");
+    res.send(homePageTimeout + "INSERTED ROW INTO DATABASE");
   }
 });
 
