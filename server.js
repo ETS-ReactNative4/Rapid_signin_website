@@ -5,7 +5,7 @@ const app = express();
 const http_port = 3000;
 
 
-const homePageTimeout = "<script>setTimeout(\"window.location.href = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port,2000'\")</script>"
+const homePageTimeout = "<script>setTimeout(window.location.href = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port,2000)</script>"
 
 app.use(express.static(path.join(__dirname, 'build')));
 /*
