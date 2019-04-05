@@ -4,7 +4,6 @@ const database = require('better-sqlite3');
 const app = express();
 const http_port = 3000;
 
-window.location.href = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port
 
 const homePageTimeout = "<script>setTimeout(\"window.location.href = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port,2000'\")</script>"
 
